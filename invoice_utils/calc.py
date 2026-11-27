@@ -28,3 +28,7 @@ def total(lines, rate=TAX_RATE):
 def format_currency(amount):
     """Format an amount as a USD currency string."""
     return f"${amount:,.2f}"
+
+def apply_discount(amount,percent):
+    """ Return the amount after a percentage discount."""
+    return round(amount * (1-precent / 100),2) 
