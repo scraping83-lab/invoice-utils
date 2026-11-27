@@ -1,6 +1,6 @@
 import pytest
 
-from invoice_utils import format_currency, subtotal, tax, total
+from invoice_utils import apply_discount, format_currency, subtotal, tax, total
 
 
 @pytest.mark.parametrize(
@@ -64,3 +64,8 @@ def test_total_sample_invoice(sample_lines):
 )
 def test_format_currency(amount, expected):
     assert format_currency(amount) == expected
+
+def test_apply_discount():
+    assert apply_discount(100.00, 20) == 80.00
+def test_total_with_discount():
+    assert total([2, 5.00]) == 110.00
