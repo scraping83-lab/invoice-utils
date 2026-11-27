@@ -13,3 +13,5 @@ pytest -v
 ```
 ## Usage
 Install with pip, run the test suite with pytest
+
+Built with CI and auto workflow from github actions
