@@ -31,4 +31,4 @@ def format_currency(amount):
 
 def apply_discount(amount,percent):
     """ Return the amount after a percentage discount."""
-    return round(amount * (1-precent / 100),2) 
+    return round(amount * (1-percent / 100),2) 
